@@ -1,0 +1,15 @@
+.git
+.env
+node_modules
+vendor
+public/css
+public/js
+public/mix-manifest.json
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+!storage/framework/cache/.gitignore
+!storage/framework/sessions/.gitignore
+!storage/framework/views/.gitignore
+!storage/logs/.gitignore
