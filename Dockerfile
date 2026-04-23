@@ -6,6 +6,7 @@ RUN npm install
 
 # Copy application files for asset compilation
 COPY . .
+ENV CI=true
 RUN npm run prod
 
 # Stage 2: PHP Application
