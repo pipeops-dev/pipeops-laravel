@@ -2,17 +2,21 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
-        "development": "mix --no-progress",
-        "watch": "mix watch --no-progress",
-        "watch-poll": "mix watch --no-progress --watch-options-poll=1000",
-        "hot": "mix watch --hot --no-progress",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production --no-progress"
+        "production": "mix --production"
     },
     "devDependencies": {
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
+    },
+    "overrides": {
+        "webpack": "5.84.1",
+        "webpackbar": "5.0.2"
     }
 }
